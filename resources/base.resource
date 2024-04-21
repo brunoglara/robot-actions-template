@@ -11,6 +11,7 @@ ${IS_HEADLESS}      True
 
 *** Keywords ***
 Start Browser
+    Set Browser Timeout    30
     New Browser    browser=${BROWSER}    headless=${IS_HEADLESS}
     New Page       ${BASE_URL}
 
